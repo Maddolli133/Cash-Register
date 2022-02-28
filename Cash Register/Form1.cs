@@ -114,11 +114,18 @@ namespace Cash_Register
                     changeAmountOutput.Text = change.ToString("C");
                 }
 
+                printRecieptButton.Enabled = true;
+
             }
             catch
             {
                 changeAmountOutput.Text = "ERROR";
             }
+        }
+
+        private void printRecieptButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

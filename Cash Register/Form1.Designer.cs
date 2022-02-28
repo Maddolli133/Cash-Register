@@ -113,6 +113,7 @@
             this.printRecieptButton.TabIndex = 46;
             this.printRecieptButton.Text = "Print Reciept";
             this.printRecieptButton.UseVisualStyleBackColor = false;
+            this.printRecieptButton.Click += new System.EventHandler(this.printRecieptButton_Click);
             // 
             // changeAmountLabel
             // 
