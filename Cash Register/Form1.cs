@@ -107,7 +107,7 @@ namespace Cash_Register
 
                 if (tendered < totalCost)
                 {
-                    changeAmountOutput.Text = "NSF";
+                    changeAmountOutput.Text = "NSFj";
                 }
                 else
                 {
