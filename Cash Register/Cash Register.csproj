@@ -83,5 +83,20 @@
   <ItemGroup>
     <None Include="Resources\A_Pokemon_Center_in_the_anime.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\201159__kiddpark__cash-register.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ching.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\250104__phatcorns__computer-beep.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\345053__azumarill__epson-receipt-printer6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216090__richerlandtv__bad-beep-incorrect.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

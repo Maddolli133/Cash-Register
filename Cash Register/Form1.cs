@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Cash_Register
 {
@@ -28,13 +29,23 @@ namespace Cash_Register
         double tendered = 0;
         double change = 0;
 
+
+        SoundPlayer chingPlayer = new SoundPlayer(Properties.Resources.ching);
+        SoundPlayer beepPlayer = new SoundPlayer(Properties.Resources.beep);
+        SoundPlayer printPlayer = new SoundPlayer(Properties.Resources.print);
+        SoundPlayer wrongPlayer = new SoundPlayer(Properties.Resources.wrong);
+
+
+
         public Form1()
         {
             InitializeComponent();
         }
 
+        //Calculate The Cost
         private void calculateTotalButton_Click(object sender, EventArgs e)
         {
+            beepPlayer.Play();
             try
             {
                 if (numOfPikasInput.Text == "")
@@ -80,6 +91,7 @@ namespace Cash_Register
             }
             catch
             {
+                wrongPlayer.Play();
                 subTotalAmountOutput.Text = "INVALID";
                 taxAmountOutput.Text = "INVALID";
                 totalAmountOutput.Text = "INVALID";
@@ -88,8 +100,10 @@ namespace Cash_Register
 
         }
 
+        //Give Change After Tendered Button
         private void calculateChangeButton_Click(object sender, EventArgs e)
         {
+            chingPlayer.Play();
             try
             {
                 if (tenderedInput.Text == "")
@@ -119,13 +133,31 @@ namespace Cash_Register
             }
             catch
             {
+                wrongPlayer.Play();
                 changeAmountOutput.Text = "ERROR";
             }
         }
 
+        //Recipt Button
         private void printRecieptButton_Click(object sender, EventArgs e)
         {
+            printPlayer.Play();
+            outPutLabel.Text = $"                    Pokémon Center\n\n " +
+                $"               Reciept Number    586757\n\n" +
+                $"Pikachu's        {numOfPikas}{pikas}\n" +
+                $"Charizaed's      {numOfChards}{chards}\n" +
+                $"Mutu's           {numOfMutus}{mutus}\n\n" +
+                $"Subtotal         {subTotal}\n" +
+                $"Tax              {taxAmount}\n" +
+                $"Total            {totalCost}\n\n" +
+                $"Tendered         {tendered}\n" +
+                $"Change           {change}";
+
+
+            newOrderButton.Enabled = true;  
 
         }
+
+
     }
 }

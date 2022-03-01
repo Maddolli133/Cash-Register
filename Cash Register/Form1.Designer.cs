@@ -42,7 +42,7 @@
             this.printReciptButton = new System.Windows.Forms.Button();
             this.tenderedLabel = new System.Windows.Forms.Label();
             this.barLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.outPutLabel = new System.Windows.Forms.Label();
             this.taxAmountOutput = new System.Windows.Forms.Label();
             this.subTotalAmountOutput = new System.Windows.Forms.Label();
             this.totalAmountOutput = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.calculateTotalButton = new System.Windows.Forms.Button();
             this.mutuLabel = new System.Windows.Forms.Label();
             this.pikachuLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pokemonCenterLabel = new System.Windows.Forms.Label();
             this.recieptLabel = new System.Windows.Forms.Label();
             this.totalLabel = new System.Windows.Forms.Label();
             this.charizardLabel = new System.Windows.Forms.Label();
@@ -206,13 +206,15 @@
             this.barLabel.Size = new System.Drawing.Size(238, 13);
             this.barLabel.TabIndex = 34;
             // 
-            // label1
+            // outPutLabel
             // 
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(324, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(361, 457);
-            this.label1.TabIndex = 15;
+            this.outPutLabel.BackColor = System.Drawing.Color.White;
+            this.outPutLabel.Font = new System.Drawing.Font("Baskerville Old Face", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outPutLabel.ForeColor = System.Drawing.Color.DarkCyan;
+            this.outPutLabel.Location = new System.Drawing.Point(324, 9);
+            this.outPutLabel.Name = "outPutLabel";
+            this.outPutLabel.Size = new System.Drawing.Size(361, 457);
+            this.outPutLabel.TabIndex = 15;
             // 
             // taxAmountOutput
             // 
@@ -307,18 +309,18 @@
             this.pikachuLabel.TabIndex = 21;
             this.pikachuLabel.Text = "Number of Pikachu\'s";
             // 
-            // label2
+            // pokemonCenterLabel
             // 
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Baskerville Old Face", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(23, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(276, 34);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Pokémon Shop";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pokemonCenterLabel.BackColor = System.Drawing.Color.White;
+            this.pokemonCenterLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pokemonCenterLabel.Font = new System.Drawing.Font("Baskerville Old Face", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pokemonCenterLabel.ForeColor = System.Drawing.Color.Red;
+            this.pokemonCenterLabel.Location = new System.Drawing.Point(23, 9);
+            this.pokemonCenterLabel.Name = "pokemonCenterLabel";
+            this.pokemonCenterLabel.Size = new System.Drawing.Size(276, 34);
+            this.pokemonCenterLabel.TabIndex = 16;
+            this.pokemonCenterLabel.Text = "Pokémon Center";
+            this.pokemonCenterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // recieptLabel
             // 
@@ -404,7 +406,7 @@
             this.Controls.Add(this.printReciptButton);
             this.Controls.Add(this.tenderedLabel);
             this.Controls.Add(this.barLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.outPutLabel);
             this.Controls.Add(this.taxAmountOutput);
             this.Controls.Add(this.subTotalAmountOutput);
             this.Controls.Add(this.totalAmountOutput);
@@ -414,7 +416,7 @@
             this.Controls.Add(this.calculateTotalButton);
             this.Controls.Add(this.mutuLabel);
             this.Controls.Add(this.pikachuLabel);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pokemonCenterLabel);
             this.Controls.Add(this.recieptLabel);
             this.Controls.Add(this.totalLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -439,7 +441,7 @@
         private System.Windows.Forms.Button printReciptButton;
         private System.Windows.Forms.Label tenderedLabel;
         private System.Windows.Forms.Label barLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label outPutLabel;
         private System.Windows.Forms.Label taxAmountOutput;
         private System.Windows.Forms.Label subTotalAmountOutput;
         private System.Windows.Forms.Label totalAmountOutput;
@@ -448,7 +450,7 @@
         private System.Windows.Forms.Button calculateTotalButton;
         private System.Windows.Forms.Label mutuLabel;
         private System.Windows.Forms.Label pikachuLabel;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label pokemonCenterLabel;
         private System.Windows.Forms.Label recieptLabel;
         private System.Windows.Forms.Label totalLabel;
         private System.Windows.Forms.Label charizardLabel;
